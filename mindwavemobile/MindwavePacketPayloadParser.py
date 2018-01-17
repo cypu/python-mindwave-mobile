@@ -73,7 +73,7 @@ class MindwavePacketPayloadParser:
             return RawDataPoint(dataRowValueBytes)
         elif (dataRowCode == 0x83):
             return EEGPowersDataPoint(dataRowValueBytes)
-        elif (dataRowCode == 0xBA or dataRowCode == 0xBC)
+        elif (dataRowCode == 0xBA or dataRowCode == 0xBC):
             return None
         else:
             assert False
